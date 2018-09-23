@@ -1,0 +1,14 @@
+{
+    "dev": {
+        "proxy": "http://dev-api.qingbest.com",
+        "port": "3006",
+        "paycode":"http://dev.qingbest.com/wxuser/#/zhifuloading",
+        "homeurl":"http://app-shopc.qingbest.com/#/"
+    },
+    "prod": {
+        "proxy": "http://api.toopop.com.cn",
+        "port": "3006",
+        "paycode":"http://wx.toopop.com.cn/wxuser/#/zhifuloading",
+        "homeurl":"http://app-shopc.toopop.com.cn/#/"
+    }
+}

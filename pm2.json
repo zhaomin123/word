@@ -1,0 +1,24 @@
+{
+    "apps": [
+        {
+            "name": "water",
+            "script": "./server.js",
+            "log_date_format": "YYYY-MM-DD HH:mm Z",
+            "out_file": "/home/appdeploy/logs/merchant/app.log",
+            "error_file": "/home/appdeploy/logs/merchant/error.log",
+            "pid_file": "/home/appdeploy/logs/merchant/merchant.pid",
+            "ignoreWatch": [
+                "[\\/\\\\]\\./",
+                "node_modules",
+                "src",
+                "test"
+            ],
+            "watch": "true",
+            "exec_mode": "cluster",
+            "instances": "1",
+            "env": {
+                "NODE_ENV": "production"
+            }
+        }
+    ]
+}

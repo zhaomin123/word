@@ -1,0 +1,20 @@
+body, div, p, ul, ol, li, dl, dt, dd, form, table, tr, td, th, caption, hr, h1, h2, h3, h4, h5, h6, img, input {
+  margin: 0;
+  padding: 0; }
+
+div,ul,ol{
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  outline: none; }
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none; }
+
+
