@@ -39,7 +39,7 @@ export default {
     props:['Selection_of_goods'],
  data(){
     return{
-      //  'Selection_of_goods':'商品精选',
+      //  'Selection_of_goods':'商品精选  该了一点点',
        fatherData:"凄凄切切   "  
     };
     },
