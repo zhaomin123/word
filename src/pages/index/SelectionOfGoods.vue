@@ -39,7 +39,7 @@ export default {
     props:['Selection_of_goods'],
  data(){
     return{
-      //  'Selection_of_goods':'商品精选 的 新建了一个分支',
+      //  'Selection_of_goods':'商品精选 的 不新建了一个分支',
        fatherData:"凄凄切切   "  
     };
     },
