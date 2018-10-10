@@ -13,7 +13,15 @@
           <!--立即领取-->
           <immediately-receive></immediately-receive>
           <!-- 商品精选 -->
-          <selection-of-goods :Selection_of_goods='Selection_of_goods'></selection-of-goods>
+          <selection-of-goods :Selection_of_goods='Selection_of_goods'>
+            <template slot="more">
+             <div class="title">
+              <span >{{Selection_of_goods}}</span>
+              <i @click="more_boutique()">更多精品>>></i>
+             </div>
+             </template>
+          
+          </selection-of-goods>
       <div class="scroll_box"></div>
         <div class="footer">
             <div class="foot_one_menu">
@@ -64,6 +72,10 @@ export default {
   },
 
   methods: {
+         /*更多精品*/
+   more_boutique(){
+      this.$router.push('/moreBoutique');
+    },
     /*退出app*/
     go_back(){
         window.AndroidJs.exitApp();
@@ -214,6 +226,11 @@ export default {
 
 <style scoped src='../../../static/css/common.css'/>
 <style lang="scss" scoped>
+.title{
+  i{
+    color:#e5ba6e;
+  }
+}
 .swiper-slide img{
     width:100%;
     height:350px;

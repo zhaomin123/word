@@ -1,12 +1,9 @@
 <template>
   <div>
       <div class="goods">
-          <div class="title">
-              <span >{{Selection_of_goods}}</span>
-              <i @click="more_boutique()">更多精品>>></i>
-          </div>
-          <h1>{{fatherData}}</h1>
-          <button @click="clickme">我是父组件，点击我，我将我的值传给子组件</button>  
+         <slot name="more"></slot>
+          <!-- <h1>{{fatherData}}</h1> -->
+          <!-- <button @click="clickme">我是父组件，点击我，我将我的值传给子组件</button>   -->
           <div >
             <ul class=" shopping">
                 <li class="goods-list">
@@ -16,7 +13,7 @@
                     <div class="right">
                 
                         <div class="car-buy">
-                            <div class="bbb"><span>¥ 400</span></div>
+                            <div class="bbb"><span>¥ 张心梦</span></div>
                             <div class="shopping-car">
                                 <div class=" come car">
                                     <img src="../../assets/images/m_footer_07.png" alt="">
@@ -44,10 +41,7 @@ export default {
     };
     },
  methods:{
-     /*更多精品*/
-   more_boutique(){
-      this.$router.push('/moreBoutique');
-    },
+
  clickme:function(){
          console.log(1)
         this.$emit('go_buy',this.fatherData)
